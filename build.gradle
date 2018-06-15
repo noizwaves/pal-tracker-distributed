@@ -1,5 +1,10 @@
 import io.pivotal.pal.tracker.gradlebuild.DependenciesGraphPlugin
 
+ext {
+    springCloudDependenciesVersion = "Edgware.RELEASE" // Edgware.SR3
+    springCloudServicesVersion = "1.6.0.RELEASE" // 1.6.3.RELEASE
+}
+
 buildscript {
     ext {
         springBootVersion = "1.5.7.RELEASE"
