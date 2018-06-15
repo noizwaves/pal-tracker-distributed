@@ -11,6 +11,7 @@ resources:
   type: semver
   source:
     bucket: {{aws-bucket}}
+    endpoint: {{aws-endpoint}}
     key: pal-tracker/current-version
     access_key_id: {{aws-access-key-id}}
     secret_access_key: {{aws-secret-access-key}}
@@ -19,6 +20,7 @@ resources:
   type: s3
   source:
     bucket: {{aws-bucket}}
+    endpoint: {{aws-endpoint}}
     regexp: pal-tracker/allocations-server-(.*).jar
     access_key_id: {{aws-access-key-id}}
     secret_access_key: {{aws-secret-access-key}}
@@ -27,6 +29,7 @@ resources:
   type: s3
   source:
     bucket: {{aws-bucket}}
+    endpoint: {{aws-endpoint}}
     regexp: pal-tracker/backlog-server-(.*).jar
     access_key_id: {{aws-access-key-id}}
     secret_access_key: {{aws-secret-access-key}}
@@ -35,6 +38,7 @@ resources:
   type: s3
   source:
     bucket: {{aws-bucket}}
+    endpoint: {{aws-endpoint}}
     regexp: pal-tracker/registration-server-(.*).jar
     access_key_id: {{aws-access-key-id}}
     secret_access_key: {{aws-secret-access-key}}
@@ -43,6 +47,7 @@ resources:
   type: s3
   source:
     bucket: {{aws-bucket}}
+    endpoint: {{aws-endpoint}}
     regexp: pal-tracker/timesheets-server-(.*).jar
     access_key_id: {{aws-access-key-id}}
     secret_access_key: {{aws-secret-access-key}}
